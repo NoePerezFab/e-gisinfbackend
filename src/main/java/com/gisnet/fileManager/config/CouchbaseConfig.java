@@ -12,7 +12,7 @@ public class CouchbaseConfig extends AbstractCouchbaseConfiguration {
     
     @Override
     public String getConnectionString(){
-        return "couchbase://localhost";
+        return "couchbase://192.168.200.217";
     }
     
     @Override
@@ -27,12 +27,9 @@ public class CouchbaseConfig extends AbstractCouchbaseConfiguration {
 
     @Override
     public String getBucketName() {
-       return "file-manager";
+       return "e-gisinf";
     }
-    @Override
-    public String getScopeName(){
-        return "documentos";
-    }
+    
     
     
 }

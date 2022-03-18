@@ -7,8 +7,11 @@ import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
 import org.springframework.data.couchbase.core.mapping.Field;
+import org.springframework.data.couchbase.repository.Collection;
+import org.springframework.data.couchbase.repository.Scope;
 
-
+@Scope("entidades")
+@Collection("user")
 @Document
 public class User implements Serializable{
     @Id 

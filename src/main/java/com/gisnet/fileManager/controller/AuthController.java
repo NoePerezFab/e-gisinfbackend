@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = { "http://192.168.254.186:3000" }, allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin("*")
 public class AuthController {
     private final String HEADER = "Authorization";
 	private final String PREFIX = "Bearer ";

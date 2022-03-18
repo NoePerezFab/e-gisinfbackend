@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gisnet</groupId>
-	<artifactId>fileManager</artifactId>
+	<artifactId>e-gisinf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>e-gisinf</name>
 	<description>File manager implementation using couchebase</description>
@@ -52,7 +52,7 @@
                 <dependency>
                     <groupId>org.springframework.data</groupId>
                     <artifactId>spring-data-couchbase</artifactId>
-                    <version>4.2.6</version>
+                    <version>4.3.2</version>
                 </dependency>
 	
 	 <dependency>
@@ -91,6 +91,7 @@
 	</dependencies>
 
 	<build>
+            <finalName>e-gisinfback</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

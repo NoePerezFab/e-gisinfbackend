@@ -34,8 +34,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-//@Controller
-@CrossOrigin(origins = { "http://192.168.254.186:3000" }, allowedHeaders = "*", allowCredentials = "true")
+@CrossOrigin("*")
 @RestController
 
 public class requestController {
@@ -51,7 +50,7 @@ public class requestController {
     @Autowired
     private FolderRepositoryService folderService;
     
-    private  String rootPath = "/home/e-GISdoc";
+    private  String rootPath = "/home/e-GISinf";
     private ObjectMapper mapper = new ObjectMapper();
     
     
